@@ -19,4 +19,11 @@ local M = {
    },
 }
 
+vim.diagnostic.config({
+   virtuat_text = false
+})
+—— Show line diagnostics automatically in hover window
+vim.o.updatetine = 250
+vim.cmd [[autocmd CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, {focus—false})]]
+
 return M
