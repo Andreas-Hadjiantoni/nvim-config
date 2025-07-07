@@ -19,12 +19,6 @@ function M.config()
 	
 	lsp.set_preferences({
 		suggest_lsp_servers = false,
-		sign_icons = {
-			error = 'E',
-			warn = 'W',
-			hint = 'H',
-			info = 'I'
-		}
 	})
 	
 	require "lsp-zero".setup()
@@ -40,10 +34,6 @@ function M.config()
       ensure_installed = M.servers,
       automatic_installation = true,
 	}
-	
-	vim.diagnostic.config({
-		virtual_text = true
-	})
 
 end
 
