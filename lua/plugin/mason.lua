@@ -25,12 +25,14 @@ function M.config()
 	require("mason").setup()
 	
 	require "mason-lspconfig".setup {
+      lazy = true,
 		function (server_name)
 		    require "lspconfig" [server_name].setup {}
 		end
 	}
 	
 	require("mason-lspconfig").setup {
+      lazy = true,
       ensure_installed = M.servers,
       automatic_installation = true,
 	}

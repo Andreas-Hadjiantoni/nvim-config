@@ -5,6 +5,7 @@ local M = {
     opts={
         --Config goes here
     },
+    lazy = true
 }
 
 function M.conf()

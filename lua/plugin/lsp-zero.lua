@@ -25,6 +25,7 @@ vim.cmd [[autocmd CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, {f
 
 vim.diagnostic.config({
    signs = {
+   severity = vim.diagnostic.severity.ERROR,
    text = {
          [vim.diagnostic.severity.ERROR] = '✘',
          [vim.diagnostic.severity.WARN] = '▲',
@@ -35,7 +36,7 @@ vim.diagnostic.config({
    underline = {
      severity = vim.diagnostic.severity.ERROR 
    },
-   virtual_text = false,  
+   virtual_text = false,
 })
 
 return M
