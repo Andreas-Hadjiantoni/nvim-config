@@ -1,7 +1,7 @@
 local M = {
     "nvim-treesitter/nvim-treesitter",
     build = "TSUpdate",
-	lazy = true,   -- We want to see the highlighting since the start, so false
+	lazy = false,   -- We want to see the highlighting since the start, so false
 }
 
 function M.config()
